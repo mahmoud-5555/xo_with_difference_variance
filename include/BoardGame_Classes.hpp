@@ -28,6 +28,18 @@ public:
    // Return true if game is over
    virtual bool game_is_over() = 0;
 };
+class xo_Pyramic : public Board {
+	
+public:
+	char winner;
+	xo_Pyramic();
+	
+    bool update_board (int x, int y, char mark);
+    void display_board();
+    bool is_winner();
+    bool is_draw();
+    bool game_is_over();
+};
 
 ///////////////////////////////////////////
 // This class represents a 3 x 3 board

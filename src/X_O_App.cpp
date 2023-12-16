@@ -7,7 +7,7 @@
 #include"../include/BoardGame_Classes.hpp"
 using namespace std;
 
-int main() {
+int run_xo_Pyramic() {
     int choice;
     Player* players[2];
     players[0] = new Player (1, 'x');
@@ -21,7 +21,6 @@ int main() {
         //Player pointer points to child
         players[1] = new RandomPlayer ('o', 3);
 
-    GameManager x_o_game (new X_O_Board(), players);
+    GameManager x_o_game (new xo_Pyramic, players);
     x_o_game.run();
-    system ("pause");
 }
