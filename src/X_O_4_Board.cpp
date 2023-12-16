@@ -48,7 +48,7 @@ bool X_O_4_Board::update_rule(int x, int y){
     }
         // For any other row either than the last one then we need to make sure that at that column this is the last square
     else {
-        for (int i = 5; i > x && i > -1; i--) {   // start looping from the bottom of the column ( i = 5 )
+        for (int i = 5; i > x; i--) {   // start looping from the bottom of the column ( i = 5 )
             // decrementing by one till we reach the square before the wanted one
             // checking if it is full or not if so then we check the one before it, if not return false
             if (board[i][y] != ' ') {
@@ -91,7 +91,7 @@ bool X_O_4_Board :: is_winner(){
 
 
                         // Four in a row (diagonally)
-                        ((i==j) && (board[i][j] == board[i + 1][j + 1] &&board[i][j] == board[i + 2][j + 2] &&board[i][j]== board[i + 3][j + 3]) )
+                        ((board[i][j] == board[i + 1][j + 1] &&board[i][j] == board[i + 2][j + 2] &&board[i][j]== board[i + 3][j + 3]) )
                 ) )
             {
 
