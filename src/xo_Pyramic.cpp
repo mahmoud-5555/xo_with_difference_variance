@@ -1,4 +1,4 @@
-#include "../include/BoardGame_Classes.hpp"
+#include "BoardGame_Classes.hpp"
 #include<iostream>
 	/**
 	 *  xo_Pyramic : is a constuctor that make the bourd and mack the constrane
@@ -162,4 +162,13 @@
 		delete[] board;
 	 }
 //};
+
+int xo_Pyramic::winnerPlayer() {
+    return 0;
+}
+
+
+bool xo_Pyramic::update_rule(int x, int y) {
+   return false;
+}
 

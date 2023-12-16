@@ -6,7 +6,7 @@
 #include <random>
 #include <iomanip>
 #include <algorithm>
-#include "../include/BoardGame_Classes.hpp"
+#include "BoardGame_Classes.hpp"
 using namespace std;
 
 // Set the board
@@ -77,4 +77,14 @@ bool X_O_Board::is_draw() {
 
 bool X_O_Board::game_is_over () {
     return n_moves >= 9;
+}
+
+
+int X_O_Board::winnerPlayer() {
+    return 0;
+}
+
+
+bool X_O_Board::update_rule(int x, int y) {
+   return false;
 }

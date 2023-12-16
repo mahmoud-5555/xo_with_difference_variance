@@ -7,7 +7,7 @@
 #include<random>
 #include<iomanip>
 #include<algorithm>
-#include"../include/BoardGame_Classes.hpp"
+#include"BoardGame_Classes.hpp"
 using namespace std;
 
 // Set player symbol and name as Random Computer Player
@@ -20,6 +20,17 @@ RandomPlayer::RandomPlayer (char symbol, int dimension):Player(symbol)
 
 // Generate a random move
 void RandomPlayer::get_move (int& x, int& y) {
-    x = (int) (rand()/(RAND_MAX + 1.0) * dimension);
-    y = (int) (rand()/(RAND_MAX + 1.0) * dimension);
+    if (dimension == 7) {
+        // x = (int) (rand()/(RAND_MAX + 1.0) * 6);
+        // y = (int) (rand()/(RAND_MAX + 1.0) * 7);
+        x = rand()%(5+1-0)+0;
+        y = rand()%(6+1-0)+0;
+    }
+    else {
+        x = (int) (rand()/(RAND_MAX + 1.0) * dimension);
+        y = (int) (rand()/(RAND_MAX + 1.0) * dimension);
+    }
+
 }
+
+

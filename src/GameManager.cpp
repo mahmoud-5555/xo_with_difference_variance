@@ -1,10 +1,15 @@
-// Class definition for XO_GameManager class
-// Author:  Mohammad El-Ramly
-// Date:    10/10/2022
-// Version: 1
+// File name: X_O_Four.cpp
+// Purpose: 6x7 Tic Tac To with new rules 
+// Author(s): Raghad Mohammed Suliman Mohammed      
+// ID(s): 20220704
+// Section: S11
+// Date: 16/12/2023
+
+
+
 
 #include <iostream>
-#include"../include/BoardGame_Classes.hpp"
+#include"BoardGame_Classes.hpp"
 using namespace std;
 
 GameManager::GameManager(Board* bPtr, Player* playerPtr[2] ) {
