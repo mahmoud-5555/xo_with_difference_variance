@@ -19,7 +19,7 @@ int run_xo_Pyramic() {
         players[1] = new Player (2, 'o');
     else
         //Player pointer points to child
-        players[1] = new RandomPlayer ('o', 3);
+        players[1] = new RandomPlayer ('o', 5);
 
     GameManager x_o_game (new xo_Pyramic, players);
     x_o_game.run();
