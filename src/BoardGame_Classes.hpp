@@ -1,7 +1,8 @@
 // Class definition for XO game classes
-// Author:  Mohammad El-Ramly
-// Date:    10/10/2022
+// Author: Mahmoud ahmed - Raghd Mohammed Suliman - Ahmed Elnile Esmaiel 
+// Date: 10/10/2022
 // Version: 1
+// emails : mahmoudadam5555@gmail.com
 
 #ifndef _BoardGame_CLASSES_H
 #define _BoardGame_CLASSES_H

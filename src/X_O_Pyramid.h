@@ -1,6 +1,6 @@
-// Class definition for XO_App class
-// Author:  Mohammad El-Ramly
-// Date:    10/10/2022
+// Class definition the main function that start xo_pyeamid game play
+// Author:  mahmoud Ahmed
+// Date:    12/16/2023
 // Version: 1
 
 #include <iostream>

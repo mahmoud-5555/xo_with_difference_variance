@@ -1,10 +1,16 @@
+// the sours of xo pyramic Class functions 
+// Author:  mahmoud Ahmed
+// Date:    12/16/2023
+// Version: 1
+// email : mahmoudadam5555@gmail.com 
+
 #include "BoardGame_Classes.hpp"
 #include <iostream>
-// in making the baord could be diffrane boundaries in nay rows by making defrance arrays
+// in making the board could be diffrane boundaries in nay rows by making defrance arrays
 //in the matrix but it will be easyly has accessing out the boundaries which is segmentaion fault ERROR
 /**
  * xo_Pyramic : is a constuctor that make the bourd and mack the constrane
- * after make the bourd the conustructor start prepear the baord by in initialise
+ * after make the bourd the conustructor start prepear the board by in initialise
  * by diffrance value -1 for empty point and -2 for not valid point
  */
 xo_Pyramic::xo_Pyramic()
@@ -18,7 +24,7 @@ xo_Pyramic::xo_Pyramic()
 	{
 		board[i] = new char[5];
 	}
-	//prepearing the baord -1 for empty point and -2 for not valid point
+	//prepearing the board -1 for empty point and -2 for not valid point
 	// the board have triangler shape so will have defrance range for any row <diagonals>
 	//thats why we have valid point and not valid point
 	for (int i = 0; i < 3; i++)
@@ -76,6 +82,9 @@ bool xo_Pyramic::update_board(int x, int y, char symbol)
 /**
  * is_winner - function that determen if ther is winner or not and assine the winner
  *  in <winner varible>
+ * in the logic of checking the winner is not efficient to define if the winner
+ * to looking in all directions of the point becuse there aren't hug probability of the point
+ * so it more ifficient to check by lines
  * Return: bool  true if there is winner
  */
 bool xo_Pyramic::is_winner()
@@ -165,7 +174,7 @@ bool xo_Pyramic::is_draw()
 {
 	return (n_moves == 9 && !is_winner());
 }
-//free the heap <the baord was in the heap>
+//free the heap <the board was in the heap>
 xo_Pyramic::~xo_Pyramic()
 {
 	for (int i = 0; i < 3; i++)
