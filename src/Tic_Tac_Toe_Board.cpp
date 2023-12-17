@@ -237,13 +237,13 @@ int Tic_Tac_Toe_Board::winnerPlayer()
 
     ///////////////////////////////////////////
     // 5 - check 5th diagonal
-    // check 4th from right to left
+    // check 5th from right to left
     if (board[4][2] == 'X' && board[3][1] == 'X' && board[2][0] == 'X')
         player1++;
     else if (board[4][2] == 'O' && board[3][1] == 'O' && board[2][0] == 'O')
         player2++;
 
-    // check 4th diagonal from left to right
+    // check 5th diagonal from left to right
     if (board[4][2] == 'X' && board[3][3] == 'X' && board[2][4] == 'X')
         player1++;
     else if (board[4][2] == 'O' && board[3][3] == 'O' && board[2][4] == 'O')
