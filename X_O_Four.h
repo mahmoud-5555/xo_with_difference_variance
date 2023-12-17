@@ -1,3 +1,12 @@
+// File name: X_O_Four.h
+// Purpose: Header file with all the game's classes definctions
+// Author(s): Raghad Mohammed Suliman 
+// ID(s): 20220704
+// Section: 12
+// Date: 17.12.2023
+// Version: 3
+
+
 #include <string>
 using namespace std;
 
