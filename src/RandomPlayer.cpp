@@ -3,15 +3,15 @@
 // Author:  Mohammad El-Ramly
 // Date:    10/10/2022
 // Version: 1
-#include<iostream>
-#include<random>
-#include<iomanip>
-#include<algorithm>
-#include"BoardGame_Classes.hpp"
+#include <iostream>
+#include <random>
+#include <iomanip>
+#include <algorithm>
+#include "BoardGame_Classes.hpp"
 using namespace std;
 
 // Set player symbol and name as Random Computer Player
-RandomPlayer::RandomPlayer (char symbol, int dimension):Player(symbol)
+RandomPlayer::RandomPlayer(char symbol, int dimension) : Player(symbol)
 {
     this->dimension = dimension;
     this->name = "Random Computer Player";
@@ -19,18 +19,18 @@ RandomPlayer::RandomPlayer (char symbol, int dimension):Player(symbol)
 }
 
 // Generate a random move
-void RandomPlayer::get_move (int& x, int& y) {
-    if (dimension == 7) {
+void RandomPlayer::get_move(int &x, int &y)
+{
+    if (dimension == 7)
+    {
         // x = (int) (rand()/(RAND_MAX + 1.0) * 6);
         // y = (int) (rand()/(RAND_MAX + 1.0) * 7);
-        x = rand()%(5+1-0)+0;
-        y = rand()%(6+1-0)+0;
+        x = rand() % (5 + 1 - 0) + 0;
+        y = rand() % (6 + 1 - 0) + 0;
     }
-    else {
-        x = (int) (rand()/(RAND_MAX + 1.0) * dimension);
-        y = (int) (rand()/(RAND_MAX + 1.0) * dimension);
+    else
+    {
+        x = (int)(rand() / (RAND_MAX + 1.0) * dimension);
+        y = (int)(rand() / (RAND_MAX + 1.0) * dimension);
     }
-
 }
-
-

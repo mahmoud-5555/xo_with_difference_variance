@@ -6,9 +6,10 @@
 
 using namespace std;
 
-void X_O_4() {
+void X_O_4()
+{
     int choice;
-    Player* players[2];
+    Player *players[2];
 
     players[0] = new Player(1, 'x');
     cout << "Welcome to the X_O_FourToWin Game :)\n";
@@ -21,17 +22,12 @@ void X_O_4() {
 
     cout << "Press (1) if you want to play against the computer :";
     cin >> choice;
-    if(choice == 1)
+    if (choice == 1)
         players[1] = new RandomPlayer('o', 7);
     else
         players[1] = new Player(2, 'o');
-    
 
-    GameManager X_O_Four (new X_O_4_Board(), players);
+    GameManager X_O_Four(new X_O_4_Board(), players);
     X_O_Four.run();
-    system ("pause");
-
-
-
+    system("pause");
 }
-

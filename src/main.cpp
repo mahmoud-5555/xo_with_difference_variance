@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 #include <cstring>
 #include <cmath>
 
@@ -6,8 +6,6 @@
 #include "main_X_O_4.h"
 #include "X_O_Pyramid.h"
 using namespace std;
-
-
 
 int main()
 {
@@ -19,7 +17,7 @@ int main()
     cout << "Play tic-tac-toe(Pyramid) press 1: \n";
     cout << "Play tic-tac-toe(6x7) press 2: \n";
     cout << "Play tic-tac-toe(5x5) press 3: \n";
-    
+
     cout << "Choice: ";
     cin >> gameChoice;
 
@@ -35,7 +33,7 @@ int main()
         }
         else if (gameChoice == 2)
         {
-          X_O_4();
+            X_O_4();
             break;
         }
         else if (gameChoice == 3)
