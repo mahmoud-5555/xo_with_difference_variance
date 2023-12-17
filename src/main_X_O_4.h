@@ -1,3 +1,10 @@
+// File name: X_O_four.cpp
+// Purpose: The implementation of the classes to the x_o_foru in a row game
+// Author(s): Raghad Mohammed Suliman 
+// ID(s): 20220704
+// Section: 12
+// Date: 17.12.2023
+// Version: 3
 
 #include "BoardGame_Classes.hpp"
 // #include "main.h"
